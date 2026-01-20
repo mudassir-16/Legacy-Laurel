@@ -1,0 +1,130 @@
+{
+    "hero": {
+        "title": "Legacy & Laurels",
+        "department": "Department of Information Technology",
+        "subtitle": "Department Day & Alumni Meet 2026",
+        "tagline": "Celebrating Excellence, Reconnecting Roots.",
+        "date": "January 31, 2026",
+        "venue": "Vignan Institute of Technology, Hyderabad",
+        "backgroundImage": "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+    },
+    "about": {
+        "title": "About the Event",
+        "description": "Join us for a day of celebration, nostalgia, and networking. The Department Day & Alumni Meet is our flagship annual event where we honor our past, celebrate our present achievements, and envision the future together.",
+        "stats": [
+            {
+                "label": "Years of Excellence",
+                "value": "6+"
+            },
+            {
+                "label": "Alumni Count",
+                "value": "150+"
+            },
+            {
+                "label": "Current Students",
+                "value": "160+"
+            },
+            {
+                "label": "Faculty Members",
+                "value": "15+"
+            }
+        ]
+    },
+    "department": {
+        "title": "Department of Information Technology",
+        "vision": "To be a center of excellence in education and research, producing globally competent professionals.",
+        "mission": [
+            "Provide quality education through modern pedagogy.",
+            "Foster research and innovation.",
+            "Strengthen industry-institute interaction."
+        ]
+    },
+    "highlights": [
+        {
+            "id": 1,
+            "title": "Keynote Speeches",
+            "description": "Insights from industry leaders and distinguished alumni.",
+            "icon": "FaMicrophoneAlt"
+        },
+        {
+            "id": 2,
+            "title": "Panel Discussions",
+            "description": "Navigating the future of technology and career growth.",
+            "icon": "FaUsers"
+        },
+        {
+            "id": 3,
+            "title": "Cultural Gala",
+            "description": "Performances by students showcasing vibrant talent.",
+            "icon": "FaMusic"
+        },
+        {
+            "id": 4,
+            "title": "Networking Lunch",
+            "description": "Connect with old friends and mentors over lunch.",
+            "icon": "FaUtensils"
+        }
+    ],
+    "schedule": [
+        {
+            "time": "09:00 AM",
+            "event": "Inauguration Ceremony"
+        },
+        {
+            "time": "9:15 AM",
+            "event": "Welcome Address"
+        },
+        {
+            "time": "10:00 AM",
+            "event": "Department Website Launch"
+        },
+        {
+            "time": "10:30 AM",
+            "event": "Alumni Website Launch"
+        },
+        {
+            "time": "11:00 AM",
+            "event": "Clubs & societies Introduction"
+        },
+        {
+            "time": "12:00 PM",
+            "event": "Prize Distribution"
+        },
+        {
+            "time": "01:10 PM",
+            "event": "Networking Lunch"
+        },
+        {
+            "time": "02:00 PM",
+            "event": "Cultural Gala"
+        },
+        {
+            "time": "03:20 PM",
+            "event": "Closing Ceremony"
+        }
+    ],
+    "gallery": [],
+    "alumni": [
+        {
+            "id": 1,
+            "name": "Sarah Jenkins",
+            "batch": "2015",
+            "role": "Senior Engineer at Google",
+            "quote": "The foundation I built here has been instrumental to my career.",
+            "image": "https://randomuser.me/api/portraits/women/44.jpg"
+        },
+        {
+            "id": 2,
+            "name": "David Chen",
+            "batch": "2012",
+            "role": "Founder, TechStart",
+            "quote": "Always grateful for the mentorship and peer network.",
+            "image": "https://randomuser.me/api/portraits/men/32.jpg"
+        }
+    ],
+    "contact": {
+        "email": "vitsitonline1@vignanits.ac.in",
+        "phone": "+91 9494441877",
+        "address": "Department of Information Technology, Vignan Institute of Technology, Hyderabad "
+    }
+}
