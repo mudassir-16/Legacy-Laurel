@@ -55,10 +55,19 @@ const Navbar = () => {
             <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <div
                     className="logo"
-                    style={{ fontSize: '1.5rem', fontWeight: '700', fontFamily: '"Times New Roman", Times, serif', cursor: 'pointer' }}
+                    style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '0.75rem',
+                        fontSize: 'clamp(1.1rem, 3vw, 1.5rem)',
+                        fontWeight: '700',
+                        fontFamily: '"Times New Roman", Times, serif',
+                        cursor: 'pointer'
+                    }}
                     onClick={() => scrollToSection('hero')}
                 >
-                    Legacy & Laurels
+                    <img src="/logo.jpeg" alt="Logo" style={{ height: '45px', width: 'auto', borderRadius: '4px' }} />
+                    <span className="nav-title">Legacy & Laurels</span>
                 </div>
 
                 {/* Desktop Menu */}
@@ -125,6 +134,9 @@ const Navbar = () => {
             </AnimatePresence>
 
             <style>{`
+                @media (max-width: 480px) {
+                    .nav-title { display: none; }
+                }
                 @media (min-width: 768px) {
                     .desktop-menu { display: flex !important; }
                     .mobile-toggle { display: none !important; }
