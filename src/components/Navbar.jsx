@@ -66,7 +66,7 @@ const Navbar = () => {
                     }}
                     onClick={() => scrollToSection('hero')}
                 >
-                    <img src="/logo.jpeg" alt="Logo" style={{ height: '45px', width: 'auto', borderRadius: '4px' }} />
+                    <img src="/logo.png" alt="Logo" style={{ height: '45px', width: 'auto', borderRadius: '4px' }} />
                     <span className="nav-title">Legacy & Laurels</span>
                 </div>
 

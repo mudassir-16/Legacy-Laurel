@@ -7,8 +7,8 @@ const Footer = () => {
             <div className="container">
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: '2rem' }}>
 
-                    <div>
-                        <h2 style={{ fontFamily: '"Times New Roman", Times, serif', fontSize: '2rem', marginBottom: '0.5rem' }}>Dept. Meet '25</h2>
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}>
+                        <h2 style={{ fontFamily: '"Times New Roman", Times, serif', fontSize: '2rem', marginBottom: '0.5rem' }}>Dept. Day & Alumni Meet 2026</h2>
                         <p style={{ opacity: 0.7 }}>Celebrating the past, inspiring the future.</p>
                     </div>
 
