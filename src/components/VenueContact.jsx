@@ -14,46 +14,46 @@ const VenueContact = () => {
     if (!data) return null;
 
     return (
-        <section id="contact" className="section-padding" style={{ backgroundColor: 'var(--color-bg-base)' }}>
+        <section id="contact" className="section-padding" style={{ backgroundColor: 'var(--color-primary)', color: 'white' }}>
             <div className="container">
                 <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-                    <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Venue & Contact</h2>
+                    <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem', color: 'white' }}>Venue & Contact</h2>
                     <div style={{ width: '60px', height: '4px', backgroundColor: 'var(--color-accent)', margin: '0 auto' }}></div>
                 </div>
 
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem' }}>
                     {/* Contact Info */}
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', justifyContent: 'center' }}>
-                        <div className="glass-panel" style={{ padding: '2rem', borderRadius: 'var(--radius-lg)', backgroundColor: 'white' }}>
+                        <div className="glass-panel" style={{ padding: '2rem', borderRadius: 'var(--radius-lg)', backgroundColor: 'white', color: 'var(--color-text-main)' }}>
                             <h3 style={{ fontSize: '1.5rem', marginBottom: '1.5rem', color: 'var(--color-primary)' }}>Get in Touch</h3>
 
                             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
-                                <div style={{ width: '40px', height: '40px', borderRadius: '50%', backgroundColor: 'var(--color-primary-light)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-accent)' }}>
+                                <div style={{ width: '40px', height: '40px', borderRadius: '50%', backgroundColor: 'var(--color-bg-base)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-primary)' }}>
                                     <FaEnvelope />
                                 </div>
                                 <div>
                                     <p style={{ fontSize: '0.9rem', color: 'var(--color-text-muted)' }}>Email Us</p>
-                                    <p style={{ fontWeight: '500' }}>{data.email}</p>
+                                    <p style={{ fontWeight: '600' }}>{data.email}</p>
                                 </div>
                             </div>
 
                             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
-                                <div style={{ width: '40px', height: '40px', borderRadius: '50%', backgroundColor: 'var(--color-primary-light)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-accent)' }}>
+                                <div style={{ width: '40px', height: '40px', borderRadius: '50%', backgroundColor: 'var(--color-bg-base)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-primary)' }}>
                                     <FaPhoneAlt />
                                 </div>
                                 <div>
                                     <p style={{ fontSize: '0.9rem', color: 'var(--color-text-muted)' }}>Call Us</p>
-                                    <p style={{ fontWeight: '500' }}>{data.phone}</p>
+                                    <p style={{ fontWeight: '600' }}>{data.phone}</p>
                                 </div>
                             </div>
 
                             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                                <div style={{ width: '40px', height: '40px', borderRadius: '50%', backgroundColor: 'var(--color-primary-light)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-accent)' }}>
+                                <div style={{ width: '40px', height: '40px', borderRadius: '50%', backgroundColor: 'var(--color-bg-base)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-primary)' }}>
                                     <FaMapMarkerAlt />
                                 </div>
                                 <div>
                                     <p style={{ fontSize: '0.9rem', color: 'var(--color-text-muted)' }}>Visit Us</p>
-                                    <p style={{ fontWeight: '500' }}>{data.address}</p>
+                                    <p style={{ fontWeight: '600' }}>{data.address}</p>
                                 </div>
                             </div>
                         </div>

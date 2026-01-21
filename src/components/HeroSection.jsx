@@ -29,11 +29,11 @@ const CountdownTimer = ({ targetDate }) => {
     }, [targetDate]);
 
     return (
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '1.5rem', marginTop: '2.5rem' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', gap: 'clamp(0.75rem, 4vw, 1.5rem)', marginTop: '2.5rem' }}>
             {Object.entries(timeLeft).map(([label, value]) => (
                 <div key={label} style={{ textAlign: 'center' }}>
-                    <div style={{ fontSize: '2rem', fontWeight: '700', color: 'var(--color-accent)' }}>{value}</div>
-                    <div style={{ fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '1px', opacity: 0.8 }}>{label}</div>
+                    <div style={{ fontSize: 'clamp(1.5rem, 5vw, 2.5rem)', fontWeight: '700', color: 'var(--color-accent)' }}>{value}</div>
+                    <div style={{ fontSize: '0.65rem', textTransform: 'uppercase', letterSpacing: '1px', opacity: 0.8 }}>{label}</div>
                 </div>
             ))}
         </div>
@@ -162,8 +162,10 @@ const HeroSection = () => {
                     <div style={{ marginBottom: '3rem' }}>
                         <CountdownTimer targetDate={data.date} />
                     </div>
-                    <a href="#schedule" className="btn btn-primary" style={{ marginRight: '1rem', minWidth: '160px' }}>View Schedule</a>
-                    <a href="#about" className="btn btn-accent" style={{ minWidth: '160px' }} >Learn More</a>
+                    <div className="flex-wrap" style={{ justifyContent: 'center', gap: '1rem' }}>
+                        <a href="#schedule" className="btn btn-primary" style={{ minWidth: '160px' }}>View Schedule</a>
+                        <a href="#about" className="btn btn-accent" style={{ minWidth: '160px' }} >Learn More</a>
+                    </div>
                 </motion.div>
             </div>
 

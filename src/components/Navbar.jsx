@@ -23,7 +23,6 @@ const Navbar = () => {
         { name: 'About', id: 'about' },
         { name: 'Department', id: 'department' },
         { name: 'Schedule', id: 'schedule' },
-        { name: 'Alumni', id: 'alumni' },
         { name: 'Contact', id: 'contact' },
     ];
 
@@ -44,12 +43,12 @@ const Navbar = () => {
                 left: 0,
                 width: '100%',
                 zIndex: 1000,
-                padding: scrolled ? '1rem 2rem' : '1.5rem 2rem',
+                padding: scrolled ? '0.75rem 0' : '1.25rem 0',
                 transition: 'all 0.3s ease',
-                backgroundColor: scrolled ? 'rgba(255, 255, 255, 0.9)' : 'transparent',
+                backgroundColor: scrolled ? 'rgba(255, 255, 255, 0.95)' : 'transparent',
                 backdropFilter: scrolled ? 'blur(10px)' : 'none',
                 boxShadow: scrolled ? '0 4px 6px -1px rgba(0, 0, 0, 0.1)' : 'none',
-                color: scrolled ? 'var(--color-primary)' : 'white' // Assuming hero is dark
+                color: scrolled ? 'var(--color-primary)' : 'white'
             }}
         >
             <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>

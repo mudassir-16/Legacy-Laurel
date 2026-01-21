@@ -5,7 +5,6 @@ import AboutEvent from './components/AboutEvent';
 import DepartmentOverview from './components/DepartmentOverview';
 import EventHighlights from './components/EventHighlights';
 import Schedule from './components/Schedule';
-import AlumniCorner from './components/AlumniCorner';
 import VenueContact from './components/VenueContact';
 import Footer from './components/Footer';
 
@@ -19,7 +18,6 @@ function App() {
         <DepartmentOverview />
         <EventHighlights />
         <Schedule />
-        <AlumniCorner />
         <VenueContact />
       </main>
       <Footer />

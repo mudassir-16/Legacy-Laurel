@@ -25,47 +25,21 @@ const Schedule = () => {
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             viewport={{ once: true }}
-                            style={{
-                                display: 'flex',
-                                gap: '1.5rem',
-                                marginBottom: '2rem',
-                                alignItems: 'center'
-                            }}
+                            className="schedule-item"
                         >
                             {/* Time Column */}
-                            <div style={{
-                                minWidth: '100px',
-                                textAlign: 'right',
-                                color: 'var(--color-accent)',
-                                fontWeight: '700',
-                                fontSize: '1.1rem'
-                            }}>
+                            <div className="schedule-time">
                                 {slot.time}
                             </div>
 
                             {/* Connector */}
-                            <div style={{
-                                position: 'relative',
-                                width: '2px',
-                                height: 'inherit',
-                                minHeight: '60px',
-                                backgroundColor: 'rgba(0,0,0,0.1)',
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center'
-                            }}>
-                                <div style={{
-                                    width: '12px',
-                                    height: '12px',
-                                    backgroundColor: 'var(--color-primary)',
-                                    borderRadius: '50%',
-                                    position: 'absolute'
-                                }}></div>
+                            <div className="schedule-connector">
+                                <div className="schedule-dot"></div>
                             </div>
 
                             {/* Event Details */}
                             <div
-                                className="glass-panel"
+                                className="glass-panel schedule-content"
                                 style={{
                                     flex: 1,
                                     padding: '1.5rem',
