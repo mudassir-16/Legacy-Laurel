@@ -28,7 +28,7 @@ const AboutEvent = () => {
                         <a href="#contact" className="btn btn-primary">Contact Organizers</a>
                     </motion.div>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.5rem' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '1rem' }}>
                         {data.stats && data.stats.map((stat, index) => (
                             <motion.div
                                 key={index}

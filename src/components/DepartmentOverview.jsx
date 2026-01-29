@@ -17,7 +17,7 @@ const DepartmentOverview = () => {
                     <div style={{ width: '100px', height: '4px', backgroundColor: 'var(--color-primary)', margin: '0 auto', opacity: 0.2 }}></div>
                 </div>
 
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
                     {/* Vision */}
                     <motion.div
                         whileHover={{ y: -5 }}

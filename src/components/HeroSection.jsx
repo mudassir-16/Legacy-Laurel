@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import useFetch from '../hooks/useFetch';
 import { contentService } from '../api/contentService';
-import { FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaCalendarAlt, FaMapMarkerAlt, FaTimes } from 'react-icons/fa';
 
 const CountdownTimer = ({ targetDate }) => {
     const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -41,6 +41,7 @@ const CountdownTimer = ({ targetDate }) => {
 };
 
 const HeroSection = () => {
+    const [showInvitation, setShowInvitation] = useState(false);
     const { data, loading, error } = useFetch(() => contentService.getSection('hero'));
 
     if (loading) return <div style={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#0f172a', color: 'white' }}>Loading...</div>;
@@ -164,7 +165,14 @@ const HeroSection = () => {
                     </div>
                     <div className="flex-wrap" style={{ justifyContent: 'center', gap: '1rem' }}>
                         <a href="#schedule" className="btn btn-primary" style={{ minWidth: '160px' }}>View Schedule</a>
-                        <a href="#about" className="btn btn-accent" style={{ minWidth: '160px' }} >Learn More</a>
+                        <button
+                            onClick={() => setShowInvitation(true)}
+                            className="btn btn-accent"
+                            style={{ minWidth: '160px', cursor: 'pointer' }}
+                        >
+                            View Invitation
+                        </button>
+                        <a href="#about" className="btn btn-primary" style={{ minWidth: '160px' }} >Learn More</a>
                     </div>
                 </motion.div>
             </div>
@@ -177,6 +185,31 @@ const HeroSection = () => {
             >
                 <div style={{ width: '2px', height: '30px', background: 'white', margin: '0 auto' }}></div>
             </motion.div>
+
+            <AnimatePresence>
+                {showInvitation && (
+                    <motion.div
+                        className="modal-overlay"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        onClick={() => setShowInvitation(false)}
+                    >
+                        <motion.div
+                            className="modal-content"
+                            initial={{ scale: 0.8, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            exit={{ scale: 0.8, opacity: 0 }}
+                            onClick={(e) => e.stopPropagation()}
+                        >
+                            <img src="/alumni-invitation.png" alt="Event Invitation" />
+                            <button className="modal-close" onClick={() => setShowInvitation(false)}>
+                                <FaTimes />
+                            </button>
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </section>
     );
 };
